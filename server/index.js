@@ -14,7 +14,7 @@ const server = http.createServer(
 
 
         console.log('url : ', req.url);
-        const filename = req.url === '/' ? req.url + 'about/index.html' : req.url ;
+        const filename = req.url === '/' ? req.url + 'index.html' : req.url ;
 
         fs.readFile(`public${filename}`, (err,body) => {
             if(err)
